@@ -169,11 +169,35 @@ To enable WSL 2 on Windows 11:
 
 ---
 
-
-
 ## 3. Running the Object Reconstruction Pipeline
 
-### a. Process Input Data
+### a. Set up Virtual Environment and Install Dependencies
+
+1. **Create a Virtual Environment**:
+
+   ```powershell
+   python -m venv venv
+   ```
+
+2. **Activate the Virtual Environment**:
+
+   ```powershell
+   .\venv\Scripts\activate
+   ```
+
+3. **Upgrade pip**:
+
+   ```powershell
+   python -m pip install --upgrade pip
+   ```
+
+4. **Install Dependencies**:
+
+   ```powershell
+   pip install -r requirements.txt
+   ```
+
+### b. Process Input Data
 
 1. **Run the segmentation mask generation script**:
 
@@ -199,7 +223,7 @@ To enable WSL 2 on Windows 11:
    cd ..
    ```
 
-### b. Build and Run the Docker Container
+### c. Build and Run the Docker Container
 
 1. **Build the Docker Image**:
 
