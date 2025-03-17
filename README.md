@@ -173,25 +173,27 @@ To enable WSL 2 on Windows 11:
 
 ### a. Set up Virtual Environment and Install Dependencies
 
-1. **Create a Virtual Environment**:
+1. **Open a powershell terminal in the Object Reconstruction directory**
+
+2. **Create a Virtual Environment**:
 
    ```powershell
    python -m venv venv
    ```
 
-2. **Activate the Virtual Environment**:
+3. **Activate the Virtual Environment**:
 
    ```powershell
    .\venv\Scripts\activate
    ```
 
-3. **Upgrade pip**:
+4. **Upgrade pip**:
 
    ```powershell
    python -m pip install --upgrade pip
    ```
 
-4. **Install Dependencies**:
+5. **Install Dependencies**:
 
    ```powershell
    pip install -r requirements.txt
