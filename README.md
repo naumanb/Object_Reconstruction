@@ -131,7 +131,14 @@ To enable WSL 2 on Windows 11:
 
 2. **Install VcXsrv**: Follow the on-screen instructions.
 
-3. **Configure Display Settings**:
+3. **Install X11 Utilities in WSL**:
+
+   ```bash
+   sudo apt-get install x11-apps
+   ```
+
+
+4. **Configure Display Settings**:
 
    - Open PowerShell and run:
 
@@ -141,14 +148,28 @@ To enable WSL 2 on Windows 11:
 
    - To make this setting permanent, add the above line to your PowerShell profile script.
 
-4. **Launch VcXsrv**:
+5. **Launch VcXsrv**:
 
    - Run "XLaunch" from the Start menu.
    - Select "Multiple windows" and click "Next".
    - Choose "Start no client" and click "Next".
    - Ensure "Disable access control" is checked and click "Finish".
 
+6. **Verify VcXsrv Installation**:
+
+   - Run "XLaunch" again (make sure icon visible in tray).
+   - Open WSL in terminal and run:
+
+     ```bash
+     xclock
+     ```
+
+   - If the clock appears, VcXsrv is successfully installed.
+
+
 ---
+
+
 
 ## 3. Running the Object Reconstruction Pipeline
 
