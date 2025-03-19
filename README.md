@@ -244,7 +244,6 @@ Note: Make sure XLaunch is running in Windows before running the following scrip
 3. **Build the Project Inside the Container**:
 
    ```bash
-   cd /workspace
    bash build.sh
    ```
 
