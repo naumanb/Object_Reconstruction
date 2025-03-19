@@ -233,6 +233,8 @@ To enable WSL 2 on Windows 11:
    docker build --network host -t nvcr.io/nvidian/bundlesdf .
    ```
 
+Note: Make sure XLaunch is running in Windows before running the following scripts.
+
 2. **Run the Docker Container**:
 
    ```powershell
